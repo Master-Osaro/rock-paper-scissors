@@ -1,0 +1,137 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root, .App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.App{
+  flex-direction: column;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 2rem 1rem;
+  padding-top: 2.5rem;
+  border: 1px solid white;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.logo{
+  height: fit-content;
+}
+
+.logo img{
+  height: 60px;
+}
+
+.score{
+  background: white;
+  color: black;
+  padding: 0 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.score__text{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+main{
+  margin-top: 60px;
+}
+
+main.final{
+  margin-top: 60px;
+  width: 100%;
+}
+
+.circle-btn{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  outline: 16px solid black;
+  background: white;
+  /* border: none; */
+}
+
+.btn-paper{
+  outline: 16px solid blue;
+}
+.btn-scissors{
+  outline: 16px solid orange;
+}
+.btn-rock{
+  outline: 16px solid red;
+}
+
+.btn-restart{
+  background: white;
+  color: black;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0.35rem;
+}
+.game-board-triangle .btn-paper{
+  position: absolute;
+  left: -30px;
+  top: -30px;
+
+}
+.game-board-triangle .btn-scissors{
+  position: absolute;
+  right: -30px;
+  top: -30px;
+}
+.game-board-triangle .btn-rock{
+  position: absolute;
+  right: 30%;
+  bottom: 0;
+}
+
+.game-board{
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.game-board-triangle{
+  width: 312px;
+  height: 275px;
+  background: url(../src/images/bg-triangle.svg);
+}
+.game-board-pentagon{
+  width: 330px;
+  height: 312px;
+  background: url(../src/images/bg-pentagon.svg);
+}
+
+
+
+.final-board{
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
